@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Sender",
+            "program": "${workspaceFolder}/sender.js",
+            "request": "launch",
+            "runtimeExecutable": "/Users/ivo/.nvm/versions/node/v20.10.0/bin/node",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Receiver",
+            "runtimeExecutable": "/Users/ivo/.nvm/versions/node/v20.10.0/bin/node",
+            "outputCapture": "console",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/receiver.js"
+        }
+    ]
+}
